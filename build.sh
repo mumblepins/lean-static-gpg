@@ -197,7 +197,7 @@ tar -C "$WORK" -xjf download/gnupg-$GNUPG_VERSION.tar.bz2
         --disable-zip
     make -kj$NJOBS
     make install DESTDIR="$DESTDIR"
-    rm "$DESTDIR$PREFIX/bin/gpgscm"
+    rm -f "$DESTDIR$PREFIX/bin/gpgscm"
 )
 
 tar -C "$WORK" -xjf download/pinentry-$PINENTRY_VERSION.tar.bz2
